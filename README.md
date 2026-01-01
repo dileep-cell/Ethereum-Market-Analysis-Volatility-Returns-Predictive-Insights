@@ -1,14 +1,14 @@
-🪙 Ethereum (ETH–USD) Market Analysis & Price Forecasting
+# 🪙 Ethereum (ETH–USD) Market Analysis & Price Forecasting
 
-📌 Project Overview
+## 📌 Project Overview
 
-Motto: "Understand the market before you predict it."
+**Motto:** "Understand the market before you predict it."
 
 This project delivers an end-to-end analytical deep dive into the Ethereum (ETH–USD) market, combining exploratory data analysis, risk metrics, advanced market diagnostics, and machine learning–based price forecasting. The analysis provides actionable market insights and short-term price forecasts using a structured, data-driven approach.
 
 Instead of jumping straight into modeling, this project prioritizes data quality, market behavior, and risk awareness, ensuring forecasts are grounded in reality—not just algorithms.
 
-📂 Data Source & Dataset Details
+## 📂 Data Source & Dataset Details
 
 **Primary Source:** [CoinGecko](https://www.coingecko.com/)
 
@@ -26,7 +26,7 @@ Instead of jumping straight into modeling, this project prioritizes data quality
 - Market capitalization
 - Trading volume
 
-🧹 Data Preparation & Feature Engineering
+## 🧹 Data Preparation & Feature Engineering
 
 Before analysis, the dataset undergoes a rigorous preprocessing pipeline:
 
@@ -43,7 +43,7 @@ Before analysis, the dataset undergoes a rigorous preprocessing pipeline:
 
 This ensures the dataset is clean, reliable, and analysis-ready.
 
-📈 Exploratory Data Analysis (EDA)
+## 📈 Exploratory Data Analysis (EDA)
 
 A comprehensive EDA phase uncovers market behavior and volatility patterns:
 
@@ -69,7 +69,7 @@ A comprehensive EDA phase uncovers market behavior and volatility patterns:
 
 **Result:** A clear picture of Ethereum's risk-return profile and trading dynamics.
 
-🧠 Advanced Analytics
+## 🧠 Advanced Analytics
 
 To move beyond surface-level insights, the project explores:
 - Volatility regime identification
@@ -78,7 +78,7 @@ To move beyond surface-level insights, the project explores:
 
 This step bridges the gap between descriptive analytics and predictive modeling.
 
-🤖 Machine Learning–Based Price Forecasting
+## 🤖 Machine Learning–Based Price Forecasting
 
 ### Models Used
 - XGBoost (Extreme Gradient Boosting)
@@ -94,8 +94,6 @@ This step bridges the gap between descriptive analytics and predictive modeling.
 - Handle non-linearity and market noise effectively
 - Perform well on structured time-series data
 - Widely adopted in real-world financial forecasting
-
----
 
 ## 📊 Model Results & Performance Metrics
 
@@ -142,7 +140,7 @@ This step bridges the gap between descriptive analytics and predictive modeling.
 
 **Recommendation:** LightGBM is production-ready for short-term (1–3 day) forecasting. For longer horizons or extreme volatility, recommend ensemble methods or adding external sentiment data.
 
-📌 Final Inference & Key Takeaways
+## 📌 Final Inference & Key Takeaways
 
 Ethereum exhibits high volatility with distinct risk regimes, making naive forecasting unreliable.
 
@@ -152,7 +150,7 @@ Gradient boosting models (XGBoost & LightGBM) demonstrate robust short-term fore
 
 The project emphasizes that model performance improves significantly when market behavior is well understood beforehand.
 
-🚀 Skills Demonstrated
+## 🚀 Skills Demonstrated
 
 - Time-series analysis & financial metrics
 - Data cleaning & feature engineering

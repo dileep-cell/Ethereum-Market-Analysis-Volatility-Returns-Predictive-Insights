@@ -13,13 +13,12 @@ turn raw crypto market data into actionable market insights and short-term price
 Instead of jumping straight into modeling, this project prioritizes data quality, market behavior, and risk awareness, ensuring forecasts are grounded in reality—not just algorithms.
 
 📂 Data Source & Dataset Details
-🔹 Data Source
+🔹**Primary Source:** [CoinGecko](https://www.coingecko.com/)
 
 Platform: Kaggle
 
 Dataset: Ethereum historical market data (ETH–USD)
 
-File Used: eth-usd-max.csv
 
 🔹 Dataset Type
 
@@ -144,6 +143,7 @@ Gradient boosting models (XGBoost & LightGBM) demonstrate robust short-term fore
 
 The project emphasizes that model performance improves significantly when market behavior is well understood beforehand.
 
+
 🚀 Skills Demonstrated
 
 Time-series analysis & financial metrics
@@ -155,15 +155,66 @@ Exploratory data analysis (EDA)
 Risk & volatility assessment
 
 Machine learning with XGBoost & LightGBM
+Key Analyses Performed
+
+30-day rolling volatility & volatility distribution analysis
+
+Trading volume trends and volume distribution
+
+Price distribution and historical price movement analysis
+
+Feature correlation analysis to identify predictive drivers
+
+Price action study using moving averages
+
+Daily returns computation and distribution analysis
+
+Volatility-aware forecasting using XGBoost and LightGBM
+
+Visual comparison of actual vs predicted price movements
 
 Analytical storytelling with business relevance
 
-🧩 Who This Project Is For
 
-Recruiters, analysts, and hiring managers looking for someone who:
 
-Thinks beyond “just training a model”
+📊  Deep dive into model results (Full 20-Day Model Accuracy & Miss Breakdown)
+Date	Actual Close ($)	LightGBM Pred ($)	LGBM Miss ($)	LGBM APE %	LGBM Verdict	XGBoost Pred ($)	XGB Miss ($)	XGB APE %	XGB Verdict
+Oct 1	3,874.80	3,971.45	+96.65	2.49%	❌ Miss	4,055.27	+180.47	4.66%	❌ Miss
+Oct 2	3,908.28	3,923.48	+15.20	0.39%	✅ No Miss	4,082.43	+174.15	4.46%	❌ Miss
+Oct 3	3,603.63	3,839.97	+236.34	6.56%	❌ Miss	3,930.63	+327.00	9.07%	❌ Miss
+Oct 4	3,289.11	3,811.54	+522.43	15.88%	❌ Miss	4,025.90	+736.79	22.40%	❌ Miss
+Oct 5	3,424.74	3,830.30	+405.56	11.84%	❌ Miss	3,979.09	+554.35	16.19%	❌ Miss
+Oct 6	3,314.43	3,901.45	+587.02	17.71%	❌ Miss	3,845.40	+530.97	16.02%	❌ Miss
+Oct 7	3,435.78	3,901.70	+465.92	13.56%	❌ Miss	3,764.03	+328.25	9.55%	❌ Miss
+Oct 8	3,401.53	3,882.93	+481.40	14.15%	❌ Miss	3,767.19	+365.66	10.75%	❌ Miss
+Oct 9	3,584.18	3,811.79	+227.61	6.35%	❌ Miss	3,764.96	+180.78	5.04%	❌ Miss
+Oct 10	3,567.87	3,811.54	+243.67	6.83%	❌ Miss	3,764.96	+197.09	5.52%	❌ Miss
+Oct 11	3,417.56	3,830.30	+412.74	12.08%	❌ Miss	3,764.96	+347.40	10.17%	❌ Miss
+Oct 12	3,413.60	3,901.45	+487.85	14.29%	❌ Miss	3,764.96	+351.36	10.29%	❌ Miss
+Oct 13	3,232.94	3,901.70	+668.76	20.69%	❌ Miss	3,764.96	+532.02	16.46%	❌ Miss
+Oct 14	3,113.03	3,882.93	+769.90	24.73%	❌ Miss	3,764.96	+651.93	20.94%	❌ Miss
+Oct 15	3,985.52	3,811.79	−173.73	4.36%	❌ Miss	3,764.96	−220.56	5.53%	❌ Miss
+Oct 16	3,894.48	3,811.54	−82.94	2.13%	❌ Miss	3,764.96	−129.52	3.33%	❌ Miss
+Oct 17	3,831.60	3,830.30	−1.30	0.03%	✅ No Miss	3,764.96	−66.64	1.74%	✅ No Miss
+Oct 18	3,888.87	3,901.45	+12.58	0.32%	✅ No Miss	3,764.96	−123.91	3.19%	❌ Miss
+Oct 19	3,982.53	3,901.70	−80.83	2.03%	❌ Miss	3,764.96	−217.57	5.46%	❌ Miss
+Oct 20	3,979.43	3,901.70	−77.73	1.95%	✅ No Miss	3,764.96	−214.47	5.39%	❌ Miss
 
-Understands financial markets + data science
+🧠 What this table proves
+LightGBM
 
-Can explain why results happen—not just what happened
+✅ 4 / 20 days accurate
+
+🎯 Near-perfect on Oct 17
+
+⚠️ Overestimates during crash, adapts later
+
+XGBoost
+
+✅ 1 / 20 days accurate
+
+❌ Flat predictions = regime blindness
+
+❌ Larger bias during drawdowns
+
+“LightGBM demonstrates superior adaptability and tighter convergence, while XGBoost exhibits prediction inertia, leading to systematic overestimation during volatile regimes.”

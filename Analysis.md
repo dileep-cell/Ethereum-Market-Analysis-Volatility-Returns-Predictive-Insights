@@ -1,4 +1,4 @@
-# 📊 Ethereum Price Forecasting - Technical Analysis Report
+# 📊 Ethereum Price Forecasting - Analysis Report
 
 ## Executive Summary
 

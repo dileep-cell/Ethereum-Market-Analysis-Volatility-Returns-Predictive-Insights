@@ -198,4 +198,5 @@ The project emphasizes that model performance improves significantly when market
 - Visual comparison of actual vs predicted price movements
 - Analytical storytelling with business relevance
 
-📊 Deep dive into model results (Full 20-Day Model Accuracy & Miss Breakdown)
+📊 Deep dive into model results (Full 20-Day Model Accuracy & Miss Breakdown):
+[Analysis.md](./Analysis.md)
